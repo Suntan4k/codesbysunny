@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+      /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Sign-in card styles */
+.sign-in-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px; /* Inner spacing */
+    width: 300px; /* Fixed width */
+    text-align: center; /* Centered text */
+}
+
+/* Heading styles */
+.sign-in-card h2 {
+    margin: 0 0 20px; /* Margin below the heading */
+    color: #333; /* Dark text color */
+}
+
+/* Form styles */
+.sign-in-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+/* Input styles */
+.sign-in-form input[type="text"],
+.sign-in-form input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Inner spacing */
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px; /* Font size */
+}
+
+/* Button styles */
+.sign-in-form input[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    padding: 12px; /* Inner spacing */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.sign-in-form input[type="submit"]:hover {
+    background-color: #00348; /* Darker blue on hover */
+}
+
+/* Link styles */
+.sign-in-card a {
+    color: #0988; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.sign-in-card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sign-in-card">
+        <h2>Sign In</h2>
+        <form class="sign-in-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+</div>
+
+</body>
+</html>
